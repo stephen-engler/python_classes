@@ -13,12 +13,25 @@ class Dog():
     #methods 
 
     def bark(self):
-        print('woof')
+        print('woof my name is {}'.format(self.name))
 
 my_dog = Dog(breed = 'lab', name = 'buster', spots = False)
 my_dog.breed
 
 my_dog.bark()
 
+
+class Circle():
+    pi = 3.14
+
+    def __init__(self, radius = 1):
+        self.radius = radius
+
+    def get_circumference(self):
+        return self.radius * self.pi * 2
+
+my_circle = Circle()
+
+print(my_circle.get_circumference())
 
 
